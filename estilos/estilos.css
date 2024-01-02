@@ -1,0 +1,512 @@
+body {
+    margin: 0;
+}
+
+.seccion1 {
+    background-color: #004A94;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004A94;
+}
+
+.logomarca {
+    width: 200px;
+    margin: 0;
+}
+
+.menu-navegable ul {
+    list-style-type: none;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.menu-navegable li {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.menu-navegable a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-navegable a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.h1-index {
+    color: white;
+}
+
+.subtituloindex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 32%;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.enlace-boton {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.servicios {
+    background-color: #e6e6e6;
+    padding-top: 50px;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 350px;
+    width: 200px;
+    border: solid;
+    text-align: center;
+    background-color: white;
+}
+
+.creacion-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 350px;
+    width: 200px;
+    border: solid;
+    text-align: center;
+    background-color: white;
+}
+
+.diseño-web {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 350px;
+    width: 200px;
+    border: solid;
+    text-align: center;
+    background-color: white;
+}
+
+.h2-servicios {
+    display: inline;
+    font-size: 30PX;
+    margin-left: 20px;
+}
+
+.cajas-servicios {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-img-top {
+    width: 285px;
+    height: 160px;
+}
+
+.seccion-nuestros-clientes {
+    background-color: #e6e6e6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.h2-nuestros-clientes {
+    display: inline;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.logos-clientes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004A94;
+}
+
+iframe {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: end;
+}
+
+.vectores {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.vectores-footer {
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.contenedor-logo-footer,
+.lgos-contacto,
+.contenedor-direccion {
+    flex: 1;
+}
+
+.form-suscripcion {
+    flex: 0 0 100%;
+}
+
+.logos-contacto {
+    display: flex;
+}
+
+.contenedor-direccion {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.form-suscripcion {
+    display: flex;
+    justify-content: center;
+}
+
+.suscribirse {
+    height: 30px;
+    width: 400px;
+    text-align: center;
+    border: solid;
+}
+
+.boton-suscribir {
+    height: 36px;
+    width: 100px;
+    border: solid;
+}
+
+.form-suscripcion {
+    margin-top: -50px;
+}
+
+.seccion-nosotros {
+    background-color: #e6e6e6;
+}
+
+.staff {
+    display: flex;
+    justify-content: center;
+    padding-bottom: grey
+}
+
+.staff-luis {
+    height: 250px;
+    width: 200px;
+    border: black solid;
+}
+
+.staff-pablo {
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+    border: black solid;
+}
+
+.titulo-pablo {
+    text-align: center;
+}
+
+.ceo1 {
+    width: 200px;
+    text-align: center;
+}
+
+.ceo2 {
+    width: 200px;
+    text-align: center;
+}
+
+.caja-mision {
+    width: 200px;
+    height: 220px;
+    border: black solid;
+    border-radius: 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.caja-vision {
+    width: 200px;
+    height: 220px;
+    border: black solid;
+    border-radius: 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.caja-valores {
+    width: 200px;
+    height: 220px;
+    border: black solid;
+    border-radius: 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.mvv {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.seccion-mvv {
+    background-color: #e6e6e6;
+}
+
+.main-equipamiento {
+    background-color: #e6e6e6;
+}
+
+.equipamiento-img {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.galeria-equipamiento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.h1-equipamiento {
+    margin-left: 20px;
+}
+
+.parrafo-eq {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.ul-equipamiento {
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.main-packs {
+    background-color: #e6e6e6;
+}
+
+.h1-packs {
+    margin-left: 20px;
+}
+
+.p1-packs {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.pack-fijo {
+    display: flex;
+    justify-content: center;
+}
+
+.h3-fijo {
+    border: black solid;
+    width: 80px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    background-color: #004A94;
+    color: white;
+}
+
+.descripcion-fijo {
+    border: black solid;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 60px;
+    align-items: center;
+    font-size: 13px;
+    padding: 2px;
+}
+
+.pack-libre {
+    display: flex;
+    justify-content: center;
+}
+
+.h3-libre {
+    border: black solid;
+    width: 80px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    background-color: #004A94;
+    color: white;
+}
+
+.descripcion-libre {
+    border: black solid;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 60px;
+    align-items: center;
+    font-size: 13px;
+    padding: 2px;
+}
+
+.pack-mixto {
+    display: flex;
+    justify-content: center;
+}
+
+.h3-mixto {
+    border: black solid;
+    width: 80px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    background-color: #004A94;
+    color: white;
+}
+
+.descripcion-mixto {
+    border: black solid;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 60px;
+    align-items: center;
+    font-size: 13px;
+    padding: 2px;
+    line-height: 15px;
+}
+
+.h2-categorias {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.caja-emprendedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
+    border: black solid;
+    justify-content: center;
+    border-radius: 10%;
+    background-color: gold;
+}
+
+.h3-emprendedor {
+    margin-top: 1px;
+    margin-bottom: 0;
+}
+
+.p-emprendedor {
+    text-align: center;
+}
+
+.caja-comercio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
+    border: black solid;
+    justify-content: center;
+    border-radius: 10%;
+    background-color: gold;
+}
+
+.h3-comercio {
+    margin-top: 1px;
+    margin-bottom: 0;
+}
+
+.p-comercio {
+    text-align: center;
+}
+
+.caja-empresa {
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
+    border: black solid;
+    justify-content: center;
+    border-radius: 10%;
+    background-color: gold;
+}
+
+.h3-empresa {
+    margin-top: 1px;
+    margin-bottom: 0;
+}
+
+.p-empresa {
+    text-align: center;
+}
+
+.cajas-categorias {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.main-postulate {
+    background-color: #e6e6e6;
+}
+
+.h1-postulate {
+    margin-left: 20px;
+}
+
+.p1-postulate {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.especialidades {
+    margin-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.caja-boton-postularme {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.boton-postularme {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
