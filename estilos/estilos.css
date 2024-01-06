@@ -10,6 +10,9 @@ header {
     align-items: center;
     background-color: black;
     margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .logomarca {
@@ -100,6 +103,16 @@ h1 {
     padding-top: 50px;
 }
 
+.h2-servicios {
+    color: white;
+    font-family: 'Squada One', sans-serif;
+}
+
+.p-servicios {
+    font-size: 80px;
+    text-shadow: 1px 1px 1px black;
+}
+
 .redes-sociales {
     display: flex;
     flex-wrap: wrap;
@@ -149,17 +162,20 @@ h1 {
 .seccion-nuestros-clientes {
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-top: 100px;
 }
 
 .h2-nuestros-clientes {
-    display: inline;
-    font-size: 30px;
-    margin-left: 20px;
+    font-family: 'Squada One', sans-serif;
+    font-size: 80px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
 }
 
-.logos-clientes {
+.carousel-inner {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-left: -150px;
 }
 
 footer {
@@ -167,40 +183,30 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
 }
 
 iframe {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     display: flex;
     justify-content: end;
 }
 
-.vectores {
-    height: 200px;
-    width: 200px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
-
-.vectores-footer {
-    width: 100px;
-    height: 100px;
+.logos-contacto {
+    width: 400px;
+    height: 80px;
     display: flex;
+    justify-content: space-around;
 }
 
-.contenedor-logo-footer,
-.lgos-contacto,
-.contenedor-direccion {
-    flex: 1;
+.iconos-redes {
+    font-size: 30px;
 }
+
 
 .form-suscripcion {
     flex: 0 0 100%;
-}
-
-.logos-contacto {
-    display: flex;
 }
 
 .contenedor-direccion {
