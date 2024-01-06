@@ -238,78 +238,26 @@ iframe {
     margin-top: -50px;
 }
 
-.seccion-nosotros {
-    background-color: #e6e6e6;
-}
-
 .staff {
-    display: flex;
+    display: grid;
+    grid-template-rows: 2*1fr;
     justify-content: center;
-    padding-bottom: grey
-}
-
-.staff-luis {
-    height: 250px;
-    width: 200px;
-    border: black solid;
-}
-
-.staff-pablo {
-    height: 250px;
-    width: 200px;
-    object-fit: cover;
-    border: black solid;
-}
-
-.titulo-pablo {
-    text-align: center;
-}
-
-.ceo1 {
-    width: 200px;
-    text-align: center;
-}
-
-.ceo2 {
-    width: 200px;
-    text-align: center;
-}
-
-.caja-mision {
-    width: 200px;
-    height: 220px;
-    border: black solid;
-    border-radius: 10%;
-    text-align: center;
-    background-color: white;
-}
-
-.caja-vision {
-    width: 200px;
-    height: 220px;
-    border: black solid;
-    border-radius: 10%;
-    text-align: center;
-    background-color: white;
-}
-
-.caja-valores {
-    width: 200px;
-    height: 220px;
-    border: black solid;
-    border-radius: 10%;
-    text-align: center;
-    background-color: white;
-}
-
-.mvv {
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 50px;
+    margin-top: 100px;
 }
 
 .seccion-mvv {
-    background-color: #e6e6e6;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.h2-nosotros {
+    display: inline;
+    font-size: 80px;
+    margin-left: 20px;
+    font-family: 'Squada One', sans-serif;
+    color: white;
 }
 
 .main-equipamiento {
