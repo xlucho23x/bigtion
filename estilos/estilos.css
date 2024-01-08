@@ -325,170 +325,40 @@ iframe {
     margin-bottom: 20px;
 }
 
-.main-packs {
-    background-color: #e6e6e6;
-}
-
-.h1-packs {
-    margin-left: 20px;
+.h2-packs {
+    font-family: 'Squada One', sans-serif;
+    font-size: 80px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
 }
 
 .p1-packs {
-    font-size: 20px;
     margin-left: 20px;
-}
-
-.pack-fijo {
-    display: flex;
-    justify-content: center;
-}
-
-.h3-fijo {
-    border: black solid;
-    width: 80px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: none;
-    background-color: #004A94;
+    margin-right: 470px;
+    font-size: 20px;
     color: white;
+    background-color: black;
 }
 
-.descripcion-fijo {
-    border: black solid;
-    display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 60px;
-    align-items: center;
-    font-size: 13px;
-    padding: 2px;
-}
-
-.pack-libre {
-    display: flex;
-    justify-content: center;
-}
-
-.h3-libre {
-    border: black solid;
-    width: 80px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: none;
-    background-color: #004A94;
-    color: white;
-}
-
-.descripcion-libre {
-    border: black solid;
-    display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 60px;
-    align-items: center;
-    font-size: 13px;
-    padding: 2px;
-}
-
-.pack-mixto {
-    display: flex;
-    justify-content: center;
-}
-
-.h3-mixto {
-    border: black solid;
-    width: 80px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: none;
-    background-color: #004A94;
-    color: white;
-}
-
-.descripcion-mixto {
-    border: black solid;
-    display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 60px;
-    align-items: center;
-    font-size: 13px;
-    padding: 2px;
-    line-height: 15px;
+.packs {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .h2-categorias {
-    font-size: 30px;
-    margin-left: 20px;
+    font-family: 'Squada One', sans-serif;
+    font-size: 80px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
 }
 
-.caja-emprendedor {
-    display: flex;
-    flex-wrap: wrap;
-    width: 210px;
-    border: black solid;
-    justify-content: center;
-    border-radius: 10%;
-    background-color: gold;
-}
-
-.h3-emprendedor {
-    margin-top: 1px;
-    margin-bottom: 0;
-}
-
-.p-emprendedor {
-    text-align: center;
-}
-
-.caja-comercio {
-    display: flex;
-    flex-wrap: wrap;
-    width: 210px;
-    border: black solid;
-    justify-content: center;
-    border-radius: 10%;
-    background-color: gold;
-}
-
-.h3-comercio {
-    margin-top: 1px;
-    margin-bottom: 0;
-}
-
-.p-comercio {
-    text-align: center;
-}
-
-.caja-empresa {
-    display: flex;
-    flex-wrap: wrap;
-    width: 210px;
-    border: black solid;
-    justify-content: center;
-    border-radius: 10%;
-    background-color: gold;
-}
-
-.h3-empresa {
-    margin-top: 1px;
-    margin-bottom: 0;
-}
-
-.p-empresa {
-    text-align: center;
-}
-
-.cajas-categorias {
+.contenedor-categorias {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .main-postulate {
