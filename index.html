@@ -34,9 +34,51 @@
                 </li>
             </ul>
         </nav>
+        <nav class="navbar navbar-dark bg-dark fixed-top nav-mobile">
+            <div class="container-fluid">
+                <div class="logomarcamobile">
+                    <img src="./multimedia/Logo sin fondo.png" class="logomarcamobile__img" alt="logo-bigtion">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/equipamiento.html">Equipamiento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/packs.html">Packss</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/postulate.html">Postulate</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <div class="fondo-bienvenida"></div>
         <section class="seccion1">
             <div>
                 <h1 class="h1-index">¡BIENVENIDO A BIGTION!</h1>
@@ -55,40 +97,89 @@
             <div class="h2-servicios">
                 <h2 class="mb-3 ms-3 p-servicios">SERVICIOS</h2>
             </div>
-            <div class="d-flex justify-content-evenly">
-                <div class="card" style="width: 18rem;">
-                    <img src="./multimedia/Blog images/carta mkt.jpg" class="card-img-top" alt="Marketing-Digital">
-                    <div class="card-body">
-                        <h5 class="card-title">Redes Sociales</h5>
-                        <p class="card-text">Desarrollamos novedosas estrategias de marketing digital en los campos en
-                            los que tu empresa lo requiere. Nos especializamos en Facebook Ads, Email Marketing y Google
-                            Ads. El objetivo es ayudarte a aumentar tu facturación de manera exponencial</p>
+            <div class="cartas-index-pc">
+                <div class="d-flex justify-content-evenly">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./multimedia/Blog images/carta mkt.jpg" class="card-img-top" alt="Marketing-Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">Redes Sociales</h5>
+                            <p class="card-text">Desarrollamos novedosas estrategias de marketing digital en los campos
+                                en
+                                los que tu empresa lo requiere. Nos especializamos en Facebook Ads, Email Marketing y
+                                Google
+                                Ads. El objetivo es ayudarte a aumentar tu facturación de manera exponencial</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./multimedia/Blog images/carta contenido.jpg" class="card-img-top"
+                            alt="Creacion-Contenido">
+                        <div class="card-body">
+                            <h5 class="card-title">Creación de Contenido</h5>
+                            <p class="card-text">Con nuestro servicio de Creación de Contenido para Redes Sociales, te
+                                ayudaremos a destacar en el ruido digital y a construir una presencia impactante que
+                                impulse
+                                el éxito de tu marca en las plataformas sociales más relevantes</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./multimedia/Blog images/carta diseño.jpg" class="card-img-top"
+                            alt="Marketing-Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">Diseño Web</h5>
+                            <p class="card-text">En nuestra agencia de marketing no solo creamos sitios web, creamos
+                                experiencias digitales. Ayudamos empresas a crecer sus ventas y automatizar sus procesos
+                                a
+                                través de un servicio integral completamente a medida y adaptable a cualquier
+                                dispositivo
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./multimedia/Blog images/carta contenido.jpg" class="card-img-top"
-                        alt="Creacion-Contenido">
-                    <div class="card-body">
-                        <h5 class="card-title">Creación de Contenido</h5>
-                        <p class="card-text">Con nuestro servicio de Creación de Contenido para Redes Sociales, te
-                            ayudaremos a destacar en el ruido digital y a construir una presencia impactante que impulse
-                            el éxito de tu marca en las plataformas sociales más relevantes</p>
+            </div>
+            <div class="cartas-index-mobile">
+                <div class=".d-sm-inline-flex">
+                    <div class="card mb-3" style="width: 18rem;">
+                        <img src="./multimedia/Blog images/carta mkt.jpg" class="card-img-top" alt="Marketing-Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">Redes Sociales</h5>
+                            <p class="card-text">Desarrollamos novedosas estrategias de marketing digital en los campos
+                                en
+                                los que tu empresa lo requiere. Nos especializamos en Facebook Ads, Email Marketing y
+                                Google
+                                Ads. El objetivo es ayudarte a aumentar tu facturación de manera exponencial</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./multimedia/Blog images/carta diseño.jpg" class="card-img-top" alt="Marketing-Digital">
-                    <div class="card-body">
-                        <h5 class="card-title">Diseño Web</h5>
-                        <p class="card-text">En nuestra agencia de marketing no solo creamos sitios web, creamos
-                            experiencias digitales. Ayudamos empresas a crecer sus ventas y automatizar sus procesos a
-                            través de un servicio integral completamente a medida y adaptable a cualquier dispositivo
-                        </p>
+                    <div class="card mb-3" style="width: 18rem;">
+                        <img src="./multimedia/Blog images/carta contenido.jpg" class="card-img-top"
+                            alt="Creacion-Contenido">
+                        <div class="card-body">
+                            <h5 class="card-title">Creación de Contenido</h5>
+                            <p class="card-text">Con nuestro servicio de Creación de Contenido para Redes Sociales, te
+                                ayudaremos a destacar en el ruido digital y a construir una presencia impactante que
+                                impulse
+                                el éxito de tu marca en las plataformas sociales más relevantes</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./multimedia/Blog images/carta diseño.jpg" class="card-img-top"
+                            alt="Marketing-Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">Diseño Web</h5>
+                            <p class="card-text">En nuestra agencia de marketing no solo creamos sitios web, creamos
+                                experiencias digitales. Ayudamos empresas a crecer sus ventas y automatizar sus procesos
+                                a
+                                través de un servicio integral completamente a medida y adaptable a cualquier
+                                dispositivo
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="seccion-nuestros-clientes">
-            <h2 class="mb-3 ms-3 h2-nuestros-clientes">NUESTROS CLIENTES</h2>
+            <div>
+                <h2 class="mb-3 ms-3 h2-nuestros-clientes">NUESTROS CLIENTES</h2>
+            </div>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -117,12 +208,12 @@
             </a>
             <a href="bigtionmkt@gmail.com" class="iconos-redes">
                 <iconify-icon icon="noto-v1:e-mail"></iconify-icon>
-            <a href="www.instagram.com" class="iconos-redes">
-                <iconify-icon icon="skill-icons:instagram"></iconify-icon>
-            </a>
-            <a href="www.twitter.com" class="iconos-redes">
-                <iconify-icon icon="skill-icons:twitter"></iconify-icon>
-            </a>
+                <a href="www.instagram.com" class="iconos-redes">
+                    <iconify-icon icon="skill-icons:instagram"></iconify-icon>
+                </a>
+                <a href="www.twitter.com" class="iconos-redes">
+                    <iconify-icon icon="skill-icons:twitter"></iconify-icon>
+                </a>
         </div>
         <div class="contenedor-direccion">
             <iframe
