@@ -320,6 +320,11 @@ iframe {
         align-items: center;
         gap: 30px;
     }
+    .titulos-tarjetas-staff {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
 }
 
 .staff {
@@ -327,6 +332,10 @@ iframe {
     grid-template-rows: 2*1fr;
     justify-content: center;
     margin-top: 100px;
+}
+
+.titulos-tarjetas-staff {
+    font-weight: bold;
 }
 
 .seccion-mvv {
