@@ -233,7 +233,7 @@ iframe {
     margin-top: -50px;
 }
 
-@media (min-width: 501px) {
+@media (min-width: 601px) {
     .nav-mobile {
         display: none;
     }
@@ -242,7 +242,7 @@ iframe {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .menu-navegable {
         display: none;
     }
@@ -324,6 +324,11 @@ iframe {
         font-size: 30px;
         text-align: center;
         font-weight: bold;
+    }
+    .logos-contacto {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
 }
 
