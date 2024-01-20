@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Agencia de marketing digital al alcance de tu emprendimiento">
+    <meta name="keywords" content="Agencia, marketing, digital, creacion, contenido, publicidad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bigtion</title>
     <link rel="shortcut icon" href="../multimedia/Favicon.png">
@@ -13,7 +15,7 @@
 <body>
     <header>
         <div class="logomarca">
-            <img src="../multimedia/Logo sin fondo.png" class="logomarca" alt="logo-bigtion">
+            <img src="../multimedia/Logo sin fondo.png" class="logomarca" alt="logo-bigtion" loading="lazy">
         </div>
         <nav class="menu-navegable">
             <ul class="nav nav-tabs">
@@ -34,33 +36,77 @@
                 </li>
             </ul>
         </nav>
+        <nav class="navbar navbar-dark bg-dark fixed-top nav-mobile">
+            <div class="container-fluid">
+                <div class="logomarcamobile">
+                    <img src="../multimedia/Logo sin fondo.png" class="logomarcamobile__img" alt="logo-bigtion"
+                        loading="lazy">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Equipamiento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./packs.html">Packs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./postulate.html">Postulate</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main class="main-equipamiento">
-        <div>
-            <h2 class="h2-equipamiento">NUESTRO EQUIPAMIENTO</h2>
+        <div class="contenedor-h1-equipamiento">
+            <h1 class="h1-equipamiento">NUESTRO EQUIPAMIENTO</h1>
         </div>
-        <div>
+        <div class="contenedor-parrafo-eq">
             <p class="parrafo-eq">En Bigtion, fusionamos creatividad y tecnología para llevar tus proyectos al siguiente
                 nivel. ¡Haz que cada momento cuente con nuestra excelencia audiovisual!</p>
         </div>
         <div class="galeria">
             <div class="galeria__item1">
-                <img src="../multimedia/Blog images/camara.png" class="galeria__img" alt="foto-camara">
+                <img src="../multimedia/Blog images/camara.png" class="galeria__img" alt="foto-camara" loading="lazy">
             </div>
             <div class="galeria__item2">
-                <img src="../multimedia/Blog images/luces.png" class="galeria__img" alt="foto-luces">
+                <img src="../multimedia/Blog images/luces.png" class="galeria__img" alt="foto-luces" loading="lazy">
             </div>
             <div class="galeria__item3">
-                <img src="../multimedia/Blog images/drone.png" class="galeria__img" alt="foto-drone">
+                <img src="../multimedia/Blog images/drone.png" class="galeria__img" alt="foto-drone" loading="lazy">
             </div>
             <div class="galeria__item4">
-                <img src="../multimedia/Blog images/estudio.png" class="galeria__img" alt="foto-estudio">
+                <img src="../multimedia/Blog images/estudio.png" class="galeria__img" alt="foto-estudio" loading="lazy">
             </div>
             <div class="galeria__item5">
-                <img src="../multimedia/Blog images/microfono.png" class="galeria__img" alt="foto-microfono">
+                <img src="../multimedia/Blog images/microfono.png" class="galeria__img" alt="foto-microfono" loading="lazy">
             </div>
             <div class="galeria__item6">
-                <img src="../multimedia/Blog images/edicion video.png" class="galeria__img" alt="foto-edicion">
+                <img src="../multimedia/Blog images/edicion video.png" class="galeria__img" alt="foto-edicion" loading="lazy">
             </div>
         </div>
         </div>
@@ -74,10 +120,36 @@
                 <li>Edición de última tecnología: Transformamos tus ideas en obras maestras</li>
             </ul>
         </div>
+        <div class="galeria-mobile">
+            <div class="galeria__item1">
+                <img src="../multimedia/Blog images/camara.png" class="galeria__img__mobile" alt="foto-camara" loading="lazy">
+                <p class="p-galeria-mobile">Cámaras 4K de última generación: Detalles impresionantes en cada toma</p>
+            </div>
+            <div class="galeria__item2">
+                <img src="../multimedia/Blog images/luces.png" class="galeria__img__mobile" alt="foto-luces" loading="lazy">
+                <p class="p-galeria-mobile">Luces profesionales adaptables: Iluminación perfecta para cualquier escenario</p>
+            </div>
+            <div class="galeria__item3">
+                <img src="../multimedia/Blog images/drone.png" class="galeria__img__mobile" alt="foto-drone" loading="lazy">
+                <p class="p-galeria-mobile">Drones para perspectivas únicas: Imágenes aéreas sorprendentes</p>
+            </div>
+            <div class="galeria__item4">
+                <img src="../multimedia/Blog images/estudio.png" class="galeria__img__mobile" alt="foto-estudio" loading="lazy">
+                <p class="p-galeria-mobile">Audio de calidad profesional: Sonido nítido y envolvente</p>
+            </div>
+            <div class="galeria__item5">
+                <img src="../multimedia/Blog images/microfono.png" class="galeria__img__mobile" alt="foto-microfono" loading="lazy">
+                <p class="p-galeria-mobile">Estudios de grabación equipados: Entorno controlado para proyectos diversos</p>
+            </div>
+            <div class="galeria__item6">
+                <img src="../multimedia/Blog images/edicion video.png" class="galeria__img__mobile" alt="foto-edicion" loading="lazy">
+                <p class="p-galeria-mobile">Edición de última tecnología: Transformamos tus ideas en obras maestras</p>
+            </div>
+        </div>
     </main>
     <footer id="footerindex">
         <div class="contenedor-logo-footer">
-            <img src="../multimedia/Logo sin fondo.png" class="logomarca" alt="logo-bigtion">
+            <img src="../multimedia/Logo sin fondo.png" class="logomarca" alt="logo-bigtion" loading="lazy">
         </div>
         <div class="logos-contacto">
             <a href="www.whatsapp.com" class="iconos-redes">
@@ -97,7 +169,7 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.462594454078!2d-58.38317602452139!3d-34.66827256090983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccb04a2376d1%3A0xae41c9b9fa055897!2sAv.%20Pres.%20Bernardino%20Rivadavia%2041%2C%20B1704ERC%20Pi%C3%B1eyro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1702007026590!5m2!1ses-419!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade" alt="maps"></iframe>
         </div>
         <div class="form-suscripcion">
             <form>

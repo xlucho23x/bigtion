@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Agencia de marketing digital al alcance de tu emprendimiento">
+    <meta name="keywords" content="Agencia, marketing, digital, creacion, contenido, publicidad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bigtion</title>
     <link rel="shortcut icon" href="../multimedia/Favicon.png" type="image/x-icon">
@@ -13,7 +15,7 @@
 <body>
     <header>
         <div class="logomarca">
-            <img src="../multimedia/Logo sin fondo.png" class="logomarca" alt="logo-bigtion">
+            <img src="../multimedia/Logo sin fondo.png" class="logomarca" alt="logo-bigtion" loading="lazy">
         </div>
         <nav class="menu-navegable">
             <ul class="nav nav-tabs">
@@ -34,50 +36,136 @@
                 </li>
             </ul>
         </nav>
+        <nav class="navbar navbar-dark bg-dark fixed-top nav-mobile">
+            <div class="container-fluid">
+                <div class="logomarcamobile">
+                    <img src="../multimedia/Logo sin fondo.png" class="logomarcamobile__img" alt="logo-bigtion"
+                        loading="lazy">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./equipamiento.html">Equipamiento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Packs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./postulate.html">Postulate</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main class="main-packs">
         <section>
             <div>
-                <h2 class="h2-packs mb-3 ms-3">NUESTROS PACKS</h2>
-            </div>
-            <div>
-                <p class="p1-packs">Contamos con distintos tipos de packs minuciosamente segmentados para ajustarlos
-                    según tu necesidad y categoría</p>
-            </div>
-            <div class="packs">
-                <div class="card mb-3">
-                    <img src="../multimedia/Packs/fijo.webp" class="card-img-top w-100 object-fit-cover"
-                        alt="imagen-pack-fijo">
-                    <div class="card-body">
-                        <h5 class="card-title">FIJO</h5>
-                        <p class="card-text">Valor combinado de la suma de un leve fijo más una leve suma abierta sujeta
-                            a interacciones recibidas a través de anuncios. Incluye creación de contenido para redes,
-                            pauta publicitaria y manejo de cuentas.</p>
+                <div class="contenedor-h1-packs">
+                    <h1 class="h2-packs mb-3 ms-3">NUESTROS PACKS</h1>
+                </div>
+                <div class="contenedor-p1-packs">
+                    <p class="p1-packs">Contamos con distintos tipos de packs minuciosamente segmentados para ajustarlos según tu necesidad y categoría</p>
+                </div>
+                <div class="packs">
+                    <div class="card mb-3">
+                        <img src="../multimedia/Packs/fijo.webp" class="card-img-top w-100 object-fit-cover"
+                            alt="imagen-pack-fijo" loading="lazy">
+                        <div class="card-body">
+                            <h2 class="card-title">FIJO</h2>
+                            <p class="card-text">Valor combinado de la suma de un leve fijo más una leve suma abierta
+                                sujeta
+                                a interacciones recibidas a través de anuncios. Incluye creación de contenido para
+                                redes,
+                                pauta publicitaria y manejo de cuentas.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <img src="../multimedia/Packs/libre.png" class="card-img-top w-100 object-fit-cover"
+                            alt="imagen-pack-libre" loading="lazy">
+                        <div class="card-body">
+                            <h2 class="card-title">LIBRE</h2>
+                            <p class="card-text">Valor abierto sujeto a interacciones recibidas a través de anuncios
+                                publicitarios. Incluye creación de contenido para redes, pauta publicitaria y manejo de
+                                cuentas.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <img src="../multimedia/Packs/mixto.jpg" class="card-img-top w-100" alt="imagen-pack-mixto"
+                            loading="lazy">
+                        <div class="card-body">
+                            <h2 class="card-title">MIXTO</h2>
+                            <p class="card-text">Valor combinado de la suma de un leve fijo más una leve suma abierta
+                                sujeta
+                                a interacciones recibidas a través de anuncios. Incluye creación de contenido para
+                                redes,
+                                pauta publicitaria y manejo de cuentas.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-3">
-                    <img src="../multimedia/Packs/libre.png" class="card-img-top w-100 object-fit-cover"
-                        alt="imagen-pack-libre">
-                    <div class="card-body">
-                        <h5 class="card-title">LIBRE</h5>
-                        <p class="card-text">Valor abierto sujeto a interacciones recibidas a través de anuncios
-                            publicitarios. Incluye creación de contenido para redes, pauta publicitaria y manejo de
-                            cuentas.</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <img src="../multimedia/Packs/mixto.jpg" class="card-img-top w-100" alt="imagen-pack-mixto">
-                    <div class="card-body">
-                        <h5 class="card-title">MIXTO</h5>
-                        <p class="card-text">Valor combinado de la suma de un leve fijo más una leve suma abierta sujeta
-                            a interacciones recibidas a través de anuncios. Incluye creación de contenido para redes,
-                            pauta publicitaria y manejo de cuentas.</p>
-                    </div>
-                </div>
             </div>
+                <div class="packs-mobile">
+                    <div class="card mb-3">
+                        <img src="../multimedia/Packs/fijo.webp" class="card-img-top w-100 object-fit-cover"
+                            alt="imagen-pack-fijo" loading="lazy">
+                        <div class="card-body">
+                            <h2 class="card-title">FIJO</h2>
+                            <p class="card-text">Valor combinado de la suma de un leve fijo más una leve suma abierta
+                                sujeta
+                                a interacciones recibidas a través de anuncios. Incluye creación de contenido para
+                                redes,
+                                pauta publicitaria y manejo de cuentas.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <img src="../multimedia/Packs/libre.png" class="card-img-top w-100 object-fit-cover"
+                            alt="imagen-pack-libre" loading="lazy">
+                        <div class="card-body">
+                            <h2 class="card-title">LIBRE</h2>
+                            <p class="card-text">Valor abierto sujeto a interacciones recibidas a través de anuncios
+                                publicitarios. Incluye creación de contenido para redes, pauta publicitaria y manejo de
+                                cuentas.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <img src="../multimedia/Packs/mixto.jpg" class="card-img-top w-100" alt="imagen-pack-mixto"
+                            loading="lazy">
+                        <div class="card-body">
+                            <h2 class="card-title">MIXTO</h2>
+                            <p class="card-text">Valor combinado de la suma de un leve fijo más una leve suma abierta
+                                sujeta
+                                a interacciones recibidas a través de anuncios. Incluye creación de contenido para
+                                redes,
+                                pauta publicitaria y manejo de cuentas.</p>
+                        </div>
+                    </div>
+                </div>
         </section>
         <section>
-            <div>
+            <div class="contenedor-h2-packs">
                 <h2 class="h2-categorias mb-3 ms-3">CATEGORIAS</h2>
             </div>
             <div class="contenedor-categorias">
@@ -107,7 +195,7 @@
     </main>
     <footer id="footerindex">
         <div class="contenedor-logo-footer">
-            <img src="../multimedia/Logo sin fondo.png" class="logomarca" alt="logo-bigtion">
+            <img src="../multimedia/Logo sin fondo.png" class="logomarca" alt="logo-bigtion" loading="lazy">
         </div>
         <div class="logos-contacto">
             <a href="www.whatsapp.com" class="iconos-redes">
@@ -127,7 +215,7 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.462594454078!2d-58.38317602452139!3d-34.66827256090983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccb04a2376d1%3A0xae41c9b9fa055897!2sAv.%20Pres.%20Bernardino%20Rivadavia%2041%2C%20B1704ERC%20Pi%C3%B1eyro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1702007026590!5m2!1ses-419!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade" alt="maps"></iframe>
         </div>
         <div class="form-suscripcion">
             <form>

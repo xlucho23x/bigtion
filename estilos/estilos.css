@@ -261,7 +261,7 @@ iframe {
     text-shadow: 1px 1px 1px black;
 }
 
-.h2-equipamiento {
+.h1-equipamiento {
     display: inline;
     font-size: 80px;
     margin-left: 20px;
@@ -310,7 +310,7 @@ iframe {
 
 .galeria__img:hover {
     transform: scale(1.1);
-    filter:brightness(50%);
+    filter: brightness(50%);
 }
 
 .lista-equipamiento {
@@ -441,7 +441,20 @@ body {
     .nav-mobile {
         display: none;
     }
+
+    .galeria-mobile {
+        display: none;
+    }
+
     .cartas-index-mobile {
+        display: none;
+    }
+
+    .packs-mobile {
+        display: none;
+    }
+
+    .contenedor-especialidades-mobile {
         display: none;
     }
 }
@@ -450,88 +463,239 @@ body {
     .menu-navegable {
         display: none;
     }
+
     .nav-mobile {
         background-color: black;
     }
+
     .logomarca {
         display: none;
     }
+
     .logomarcamobile {
         display: inline-block;
         width: 50px;
         height: 50px;
     }
+
     .logomarcamobile__img {
         display: block;
         max-width: 100%;
     }
+
     .h1-index {
         margin-top: 15px;
     }
+
     .h2-servicios {
         display: flex;
         justify-content: center;
     }
+
     .h3-index {
         display: none;
     }
+
     .cartas-index-pc {
         display: none;
     }
+
     .cartas-index-mobile {
         display: flex;
         justify-content: center;
     }
+
     .h2-nuestros-clientes {
         text-align: center;
     }
+
     .carousel {
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
     }
+
     .carousel-inner {
         margin-left: -250px;
         width: 150%;
     }
+
     .contenedor-direccion {
         display: none;
     }
+
     .suscribirse {
         width: 60%;
     }
+
     .boton-suscribir {
         height: 30px;
     }
+
     .contenedor-logo-footer {
         width: 100%;
         display: grid;
         grid-template-rows: 1fr;
         justify-content: center;
     }
+
     .contenedor-h2-nosotros {
         display: grid;
         grid-template-rows: 1fr;
         text-align: center;
         margin-top: 150px;
     }
+
     .staff {
         width: 80%;
         margin: auto;
     }
+
     .seccion-mvv {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
+
     .titulos-tarjetas-staff {
         font-size: 30px;
         text-align: center;
         font-weight: bold;
     }
+
     .logos-contacto {
         width: 100%;
         display: flex;
         justify-content: space-around;
     }
-}
+
+    .contenedor-h1-equipamiento {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .h1-equipamiento {
+        font-size: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .parrafo-eq {
+        text-align: center;
+        margin: auto;
+    }
+
+    .contenedor-parrafo-eq {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .galeria {
+        display: none;
+    }
+
+    .lista-equipamiento {
+        display: none;
+    }
+
+    .galeria-mobile {
+        display: grid;
+        grid-template-rows: 6 1fr;
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+    }
+
+    .p-galeria-mobile {
+        color: white;
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+        background-color: black;
+    }
+
+    .galeria__img__mobile {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 2px;
+        border: solid white 10px;
+    }
+
+    .contenedor-h1-packs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .packs {
+        display: none;
+    }
+
+    .contenedor-h1-packs {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .contenedor-p1-packs {
+        display: inline;
+    }
+
+    .p1-packs {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .contenedor-h2-packs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .packs-mobile {
+        margin-top: 30px;
+    }
+
+    .contenedor-categorias {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .h2-postulate {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .p1-postulate {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .contenedor-grilla-especialidades {
+        display: none;
+    }
+
+    .contenedor-especialidades-mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .h2-carusel-mobile {
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 2px 2px 0px black;
+        flex-wrap: wrap;
+        font-size: 25px;
+    }
+
+    .img-carusel-mobile {
+        filter:brightness(50%);
+    }
