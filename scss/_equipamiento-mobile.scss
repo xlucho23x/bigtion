@@ -1,0 +1,149 @@
+@media (max-width: 600px) {
+    .main-equipamiento {
+        .contenedor-h1-equipamiento {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            .h1-equipamiento {
+                font-size: 50px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .contenedor-parrafo-eq {
+            margin: auto;
+            margin-bottom: 30px;
+
+            .parrafo-eq {
+                text-align: center;
+                margin: auto;
+            }
+        }
+
+        .lista-equipamiento {
+            display: none;
+        }
+
+        .galeria {
+            display: none;
+        }
+
+        .galeria-mobile {
+            display: grid;
+            grid-template-rows: 6 1fr;
+            width: 90%;
+            margin: auto;
+            gap: 20px;
+
+            .galeria__item1 {
+                .galeria__img__mobile {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 2px;
+                    border: solid white 10px;
+                }
+
+                .p-galeria-mobile {
+                    color: white;
+                    font-size: 20px;
+                    position: relative;
+                    text-align: center;
+                    background-color: black;
+                }
+            }
+
+            .galeria__item2 {
+                .galeria__img__mobile {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 2px;
+                    border: solid white 10px;
+                }
+
+                .p-galeria-mobile {
+                    color: white;
+                    font-size: 20px;
+                    position: relative;
+                    text-align: center;
+                    background-color: black;
+                }
+            }
+
+            .galeria__item3 {
+                .galeria__img__mobile {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 2px;
+                    border: solid white 10px;
+                }
+
+                .p-galeria-mobile {
+                    color: white;
+                    font-size: 20px;
+                    position: relative;
+                    text-align: center;
+                    background-color: black;
+                }
+            }
+
+            .galeria__item4 {
+                .galeria__img__mobile {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 2px;
+                    border: solid white 10px;
+                }
+
+                .p-galeria-mobile {
+                    color: white;
+                    font-size: 20px;
+                    position: relative;
+                    text-align: center;
+                    background-color: black;
+                }
+            }
+
+            .galeria__item5 {
+                .galeria__img__mobile {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 2px;
+                    border: solid white 10px;
+                }
+
+                .p-galeria-mobile {
+                    color: white;
+                    font-size: 20px;
+                    position: relative;
+                    text-align: center;
+                    background-color: black;
+                }
+            }
+
+            .galeria__item6 {
+                .galeria__img__mobile {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 2px;
+                    border: solid white 10px;
+                }
+
+                .p-galeria-mobile {
+                    color: white;
+                    font-size: 20px;
+                    position: relative;
+                    text-align: center;
+                    background-color: black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    .logomarca {
+        width: 100px;
+        margin: 0;
+    }
+
+    .menu-navegable ul {
+        list-style-type: none;
+        display: flex;
+        text-transform: uppercase;
+    }
+
+    .menu-navegable li {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    .menu-navegable a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+
+        &hover {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

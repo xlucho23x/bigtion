@@ -1,0 +1,38 @@
+.seccion-nosotros {
+    .contenedor-h2-nosotros {
+        .h2-nosotros {
+            display: inline;
+            font-size: 80px;
+            margin-left: 20px;
+            font-family: 'Squada One', sans-serif;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+    }
+
+    .staff {
+        display: grid;
+        grid-template-rows: 2*1fr;
+        justify-content: center;
+        margin-top: 100px;
+        div {
+            div {
+                div {
+                    div {
+                        .titulos-tarjetas-staff {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.seccion-mvv {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+
+    .contenedor-logo-footer {
+        .logomarca {
+            width: 100px;
+            margin: 0;
+        }
+    }
+
+    .logos-contacto {
+        width: 400px;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+
+        .iconos-redes {
+            font-size: 30px;
+        }
+    }
+
+    .contenedor-direccion {
+        width: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+
+        iframe {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    .form-suscripcion {
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: -50px;
+
+
+        .suscribirse {
+            height: 30px;
+            width: 400px;
+            text-align: center;
+            border: solid;
+        }
+
+        .boton-suscribir {
+            height: 36px;
+            width: 100px;
+            border: solid;
+        }
+    }
+}

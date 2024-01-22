@@ -1,0 +1,132 @@
+.main-equipamiento {
+    .contenedor-h1-equipamiento {
+        .h1-equipamiento {
+            display: inline;
+            font-size: 80px;
+            margin-left: 20px;
+            font-family: 'Squada One', sans-serif;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+    }
+
+    .contenedor-parrafo-eq {
+        .parrafo-eq {
+            margin-left: 20px;
+            margin-right: 90px;
+            font-size: 20px;
+            color: white;
+            background-color: black;
+        }
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: (3, 200px);
+        width: 1200px;
+        margin: auto;
+        grid-gap: 15px;
+        margin-bottom: 50px;
+
+        .galeria__item1 {
+            .galeria__img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 2px;
+                border: solid white 10px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: brightness(50%);
+                }
+            }
+        }
+
+        .galeria__item2 {
+            .galeria__img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 2px;
+                border: solid white 10px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: brightness(50%);
+                }
+            }
+        }
+
+        .galeria__item3 {
+            .galeria__img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 2px;
+                border: solid white 10px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: brightness(50%);
+                }
+            }
+        }
+
+        .galeria__item4 {
+            .galeria__img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 2px;
+                border: solid white 10px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: brightness(50%);
+                }
+            }
+        }
+
+        .galeria__item5 {
+            .galeria__img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 2px;
+                border: solid white 10px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: brightness(50%);
+                }
+            }
+        }
+    }
+
+    .galeria__item6 {
+        .galeria__img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 2px;
+            border: solid white 10px;
+
+            &:hover {
+                transform: scale(1.1);
+                filter: brightness(50%);
+            }
+        }
+    }
+}
+
+.lista-equipamiento {
+    margin-left: 20px;
+    margin-right: 90px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

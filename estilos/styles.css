@@ -1,555 +1,693 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
-
 body {
-    margin: 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    margin-bottom: 50px;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-.logomarca {
-    width: 100px;
-    margin: 0;
-}
-
-.menu-navegable ul {
-    list-style-type: none;
-    display: flex;
-    text-transform: uppercase;
-}
-
-.menu-navegable li {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 20px;
-}
-
-.menu-navegable a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.menu-navegable a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-main {
-    position: relative;
-}
-
-.seccion1 {
-    display: inline;
-    text-align: center;
-    z-index: 0;
-    color: white;
+  margin: 0;
+  background: url(../multimedia/fondo\ 2.png) no-repeat center center fixed;
+  background-size: cover;
 }
 
 h1 {
-    font-family: "Squada One", sans-serif;
-    font-size: 60px;
-    margin-bottom: 0;
-    margin-top: 0;
+  font-family: "Squada One", sans-serif;
+  font-size: 60px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-.h1-index {
-    color: white;
+@media (min-width: 601px) {
+  .nav-mobile {
+    display: none;
+  }
+  .galeria-mobile {
+    display: none;
+  }
+  .cartas-index-mobile {
+    display: none;
+  }
+  .packs-mobile {
+    display: none;
+  }
+  .contenedor-especialidades-mobile {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .menu-navegable {
+    display: none;
+  }
+  .nav-mobile {
     background-color: black;
+  }
+  .logomarca {
+    display: none;
+  }
+  .logomarcamobile {
     display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+  .logomarcamobile__img {
+    display: block;
+    max-width: 100%;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  margin-bottom: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header .logomarca {
+  width: 100px;
+  margin: 0;
+}
+header .menu-navegable ul {
+  list-style-type: none;
+  display: flex;
+  text-transform: uppercase;
+}
+header .menu-navegable li {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+header .menu-navegable a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+header .menu-navegable ahover {
+  text-decoration: none;
+  color: white;
 }
 
-.h2-index {
-    font-size: 28px;
-    font-style: oblique;
-    color: white;
-    background-color: black;
-    display: inline-block;
+main .seccion1 {
+  display: inline;
+  text-align: center;
+  z-index: 0;
+  color: white;
+}
+main .seccion1 div .h1-index {
+  color: white;
+  background-color: black;
+  display: inline-block;
+}
+main .seccion1 div .h2-index {
+  font-size: 28px;
+  font-style: oblique;
+  color: white;
+  background-color: black;
+  display: inline-block;
+}
+main .seccion1 div .h3-index {
+  font-size: 28px;
+  font-style: oblique;
+  color: white;
+  background-color: black;
+  display: inline-block;
+}
+main .seccion1 .div-boton {
+  padding-top: 50px;
+}
+main .seccion1 .div-boton .enlace-boton {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+main .servicios {
+  padding-top: 50px;
+}
+main .servicios .h2-servicios {
+  color: white;
+  font-family: "Squada One", sans-serif;
+  text-shadow: 1px 1px 1px black;
+}
+main .servicios .h2-servicios .p-servicios {
+  font-size: 80px;
+  text-shadow: 1px 1px 1px black;
+}
+main .seccion-nuestros-clientes {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+}
+main .seccion-nuestros-clientes div .h2-nuestros-clientes {
+  font-family: "Squada One", sans-serif;
+  font-size: 80px;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+main .seccion-nuestros-clientes div .carousel-inner {
+  display: flex;
+  justify-content: center;
+  margin-left: -150px;
 }
 
-.h3-index {
-    font-size: 28px;
-    font-style: oblique;
-    color: white;
-    background-color: black;
-    display: inline-block;
+.seccion-nosotros .contenedor-h2-nosotros .h2-nosotros {
+  display: inline;
+  font-size: 80px;
+  margin-left: 20px;
+  font-family: "Squada One", sans-serif;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
-
-.div-boton {
-    padding-top: 50px;
+.seccion-nosotros .staff {
+  display: grid;
+  grid-template-rows: 2fr;
+  justify-content: center;
+  margin-top: 100px;
 }
-
-.enlace-boton {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.servicios {
-    padding-top: 50px;
-}
-
-.h2-servicios {
-    color: white;
-    font-family: "Squada One", sans-serif;
-    text-shadow: 1px 1px 1px black;
-}
-
-.p-servicios {
-    font-size: 80px;
-    text-shadow: 1px 1px 1px black;
-}
-
-.redes-sociales {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 350px;
-    width: 200px;
-    border: solid;
-    text-align: center;
-}
-
-.creacion-contenido {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 350px;
-    width: 200px;
-    border: solid;
-    text-align: center;
-}
-
-.diseño-web {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 350px;
-    width: 200px;
-    border: solid;
-    text-align: center;
-}
-
-.h2-servicios {
-    display: inline;
-    font-size: 30PX;
-    margin-left: 20px;
-}
-
-.cajas-servicios {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.card-img-top {
-    width: 285px;
-    height: 160px;
-}
-
-.seccion-nuestros-clientes {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 100px;
-}
-
-.h2-nuestros-clientes {
-    font-family: "Squada One", sans-serif;
-    font-size: 80px;
-    text-shadow: 1px 1px 1px black;
-    color: white;
-}
-
-.carousel-inner {
-    display: flex;
-    justify-content: center;
-    margin-left: -150px;
-}
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-}
-
-iframe {
-    height: 100px;
-    width: 100px;
-    display: flex;
-    justify-content: end;
-}
-
-.logos-contacto {
-    width: 400px;
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.iconos-redes {
-    font-size: 30px;
-}
-
-.form-suscripcion {
-    flex: 0 0 100%;
-}
-
-.contenedor-direccion {
-    width: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-}
-
-.form-suscripcion {
-    display: flex;
-    justify-content: center;
-}
-
-.suscribirse {
-    height: 30px;
-    width: 400px;
-    text-align: center;
-    border: solid;
-}
-
-.boton-suscribir {
-    height: 36px;
-    width: 100px;
-    border: solid;
-}
-
-.form-suscripcion {
-    margin-top: -50px;
-}
-
-@media (min-width: 501px) {
-    .nav-mobile {
-        display: none;
-    }
-
-    .cartas-index-mobile {
-        display: none;
-    }
-}
-
-@media (max-width: 500px) {
-    .menu-navegable {
-        display: none;
-    }
-
-    .nav-mobile {
-        background-color: black;
-    }
-
-    .logomarca {
-        display: none;
-    }
-
-    .logomarcamobile {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-    }
-
-    .logomarcamobile__img {
-        display: block;
-        max-width: 100%;
-    }
-
-    .h1-index {
-        margin-top: 15px;
-    }
-
-    .h2-servicios {
-        display: flex;
-        justify-content: center;
-    }
-
-    .h3-index {
-        display: none;
-    }
-
-    .cartas-index-pc {
-        display: none;
-    }
-
-    .cartas-index-mobile {
-        display: flex;
-        justify-content: center;
-    }
-
-    .h2-nuestros-clientes {
-        text-align: center;
-    }
-
-    .carousel {
-        display: flex;
-        justify-content: center;
-    }
-
-    .carousel-inner {
-        margin-left: -250px;
-        width: 150%;
-    }
-
-    .contenedor-direccion {
-        display: none;
-    }
-
-    .suscribirse {
-        width: 60%;
-    }
-
-    .boton-suscribir {
-        height: 30px;
-    }
-
-    .contenedor-logo-footer {
-        width: 100%;
-        display: grid;
-        grid-template-rows: 1fr;
-        justify-content: center;
-    }
-
-    .contenedor-h2-nosotros {
-        display: grid;
-        grid-template-rows: 1fr;
-        text-align: center;
-        margin-top: 150px;
-    }
-
-    .staff {
-        width: 80%;
-        margin: auto;
-    }
-
-    .seccion-mvv {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .titulos-tarjetas-staff {
-        font-size: 30px;
-        text-align: center;
-        font-weight: bold;
-    }
-}
-
-.staff {
-    display: grid;
-    grid-template-rows: 2fr;
-    justify-content: center;
-    margin-top: 100px;
-}
-
-.titulos-tarjetas-staff {
-    font-weight: bold;
+.seccion-nosotros .staff div div div div .titulos-tarjetas-staff {
+  font-weight: bold;
 }
 
 .seccion-mvv {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  text-align: center;
 }
 
-.h2-nosotros {
-    display: inline;
-    font-size: 80px;
-    margin-left: 20px;
-    font-family: "Squada One", sans-serif;
-    color: white;
-    text-shadow: 1px 1px 1px black;
+.main-equipamiento .contenedor-h1-equipamiento .h1-equipamiento {
+  display: inline;
+  font-size: 80px;
+  margin-left: 20px;
+  font-family: "Squada One", sans-serif;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+.main-equipamiento .contenedor-parrafo-eq .parrafo-eq {
+  margin-left: 20px;
+  margin-right: 90px;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+}
+.main-equipamiento .galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3, 200px;
+  width: 1200px;
+  margin: auto;
+  grid-gap: 15px;
+  margin-bottom: 50px;
+}
+.main-equipamiento .galeria .galeria__item1 .galeria__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: solid white 10px;
+}
+.main-equipamiento .galeria .galeria__item1 .galeria__img:hover {
+  transform: scale(1.1);
+  filter: brightness(50%);
+}
+.main-equipamiento .galeria .galeria__item2 .galeria__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: solid white 10px;
+}
+.main-equipamiento .galeria .galeria__item2 .galeria__img:hover {
+  transform: scale(1.1);
+  filter: brightness(50%);
+}
+.main-equipamiento .galeria .galeria__item3 .galeria__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: solid white 10px;
+}
+.main-equipamiento .galeria .galeria__item3 .galeria__img:hover {
+  transform: scale(1.1);
+  filter: brightness(50%);
+}
+.main-equipamiento .galeria .galeria__item4 .galeria__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: solid white 10px;
+}
+.main-equipamiento .galeria .galeria__item4 .galeria__img:hover {
+  transform: scale(1.1);
+  filter: brightness(50%);
+}
+.main-equipamiento .galeria .galeria__item5 .galeria__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: solid white 10px;
+}
+.main-equipamiento .galeria .galeria__item5 .galeria__img:hover {
+  transform: scale(1.1);
+  filter: brightness(50%);
+}
+.main-equipamiento .galeria__item6 .galeria__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: solid white 10px;
+}
+.main-equipamiento .galeria__item6 .galeria__img:hover {
+  transform: scale(1.1);
+  filter: brightness(50%);
 }
 
-.h2-equipamiento {
-    display: inline;
-    font-size: 80px;
-    margin-left: 20px;
-    font-family: "Squada One", sans-serif;
-    color: white;
-    text-shadow: 1px 1px 1px black;
+.lista-equipamiento {
+  margin-left: 20px;
+  margin-right: 90px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.equipamiento-img {
-    height: 300px;
-    width: 400px;
-    object-fit: cover;
+.main-packs .section-packs .contenedor-total-packs .contenedor-h1-packs .h1-packs {
+  font-family: "Squada One", sans-serif;
+  font-size: 80px;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+.main-packs .section-packs .contenedor-total-packs .contenedor-p1-packs .p1-packs {
+  margin-left: 20px;
+  margin-right: 470px;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+}
+.main-packs .section-packs .contenedor-total-packs .packs {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  width: 800px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.main-packs .section-packs .contenedor-total-packs .packs .card .card-img-top {
+  height: 160px;
+}
+.main-packs section .contenedor-h2-packs .h2-categorias {
+  font-family: "Squada One", sans-serif;
+  font-size: 80px;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+.main-packs section .contenedor-categorias {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
-.galeria-equipamiento {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.main-postulate div .h1-postulate {
+  font-family: "Squada One", sans-serif;
+  font-size: 80px;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+.main-postulate div .p1-postulate {
+  font-size: 20px;
+  margin-left: 20px;
+  color: white;
+  background-color: black;
+  margin-right: 500px;
+}
+.main-postulate .contenedor-grilla-especialidades {
+  display: flex;
+  justify-content: center;
+}
+.main-postulate .contenedor-grilla-especialidades .especialidades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 500px);
+  background-color: white;
+  width: 1000px;
+  border: solid black 5px;
+  place-items: center;
+  margin-bottom: 40px;
+}
+.main-postulate .contenedor-grilla-especialidades .especialidades .titulo-imagen {
+  height: 100%;
+}
+.main-postulate .contenedor-grilla-especialidades .especialidades .titulo-imagen .especialidades__img {
+  object-fit: cover;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+.main-postulate .contenedor-grilla-especialidades .especialidades .titulos-img {
+  position: relative;
+  text-align: center;
+  margin-top: -60px;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  background-color: black;
+}
+.main-postulate .contenedor-grilla-especialidades div .textos-especialidades {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.main-postulate .caja-boton-postularme {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.main-postulate .caja-boton-postularme .boton-postularme {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.parrafo-eq {
-    margin-left: 20px;
-    margin-right: 90px;
-    font-size: 20px;
-    color: white;
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+footer .contenedor-logo-footer .logomarca {
+  width: 100px;
+  margin: 0;
+}
+footer .logos-contacto {
+  width: 400px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .logos-contacto .iconos-redes {
+  font-size: 30px;
+}
+footer .contenedor-direccion {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+footer .contenedor-direccion iframe {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: end;
+}
+footer .form-suscripcion {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+footer .form-suscripcion .suscribirse {
+  height: 30px;
+  width: 400px;
+  text-align: center;
+  border: solid;
+}
+footer .form-suscripcion .boton-suscribir {
+  height: 36px;
+  width: 100px;
+  border: solid;
+}
+
+@media (max-width: 600px) {
+  .menu-navegable {
+    display: none;
+  }
+  .logomarca {
+    display: none;
+  }
+  .nav-mobile {
     background-color: black;
+  }
+  .nav-mobile div .logomarcamobile {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+  .nav-mobile div .logomarcamobile .logomarcamobile__img {
+    display: block;
+    max-width: 100%;
+  }
 }
-
-.galeria {
+@media (max-width: 600px) {
+  main .seccion1 div .h1-index {
+    margin-top: 15px;
+  }
+  main .seccion1 div .h3-index {
+    display: none;
+  }
+  main .servicios .h2-servicios {
+    display: flex;
+    justify-content: center;
+  }
+  main .servicios .cartas-index-pc {
+    display: none;
+  }
+  main .servicios .cartas-index-mobile {
+    display: flex;
+    justify-content: center;
+  }
+  main .seccion-nuestros-clientes div .h2-nuestros-clientes {
+    text-align: center;
+  }
+  main .seccion-nuestros-clientes div .carousel-inner {
+    margin-left: -250px;
+    width: 150%;
+  }
+}
+@media (max-width: 600px) {
+  main .seccion-nosotros .contenedor-h2-nosotros {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3, 200px;
-    width: 1200px;
+    grid-template-rows: 1fr;
+    text-align: center;
+    margin-top: 150px;
+  }
+  main .seccion-nosotros .staff {
+    width: 80%;
     margin: auto;
-    grid-gap: 15px;
-    margin-bottom: 50px;
+  }
+  main .seccion-nosotros .staff div div div div .titulos-tarjetas-staff {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .seccion-mvv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }
-
-.galeria__img {
+@media (max-width: 600px) {
+  .main-equipamiento .contenedor-h1-equipamiento {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .main-equipamiento .contenedor-h1-equipamiento .h1-equipamiento {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .main-equipamiento .contenedor-parrafo-eq {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .main-equipamiento .contenedor-parrafo-eq .parrafo-eq {
+    text-align: center;
+    margin: auto;
+  }
+  .main-equipamiento .lista-equipamiento {
+    display: none;
+  }
+  .main-equipamiento .galeria {
+    display: none;
+  }
+  .main-equipamiento .galeria-mobile {
+    display: grid;
+    grid-template-rows: 6 1fr;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item1 .galeria__img__mobile {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 2px;
     border: solid white 10px;
-}
-
-.galeria__img:hover {
-    transform: scale(1.1);
-    filter: brightness(50%);
-}
-
-.lista-equipamiento {
-    margin-left: 20px;
-    margin-right: 90px;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item1 .p-galeria-mobile {
+    color: white;
     font-size: 20px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.h2-packs {
-    font-family: "Squada One", sans-serif;
-    font-size: 80px;
-    text-shadow: 1px 1px 1px black;
-    color: white;
-}
-
-.p1-packs {
-    margin-left: 20px;
-    margin-right: 470px;
-    font-size: 20px;
-    color: white;
-    background-color: black;
-}
-
-.packs {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    width: 800px;
-    margin: auto;
-    margin-bottom: 30px;
-}
-
-.h2-categorias {
-    font-family: "Squada One", sans-serif;
-    font-size: 80px;
-    text-shadow: 1px 1px 1px black;
-    color: white;
-}
-
-.contenedor-categorias {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
-
-.h2-postulate {
-    font-family: "Squada One", sans-serif;
-    font-size: 80px;
-    text-shadow: 1px 1px 1px black;
-    color: white;
-}
-
-.p1-postulate {
-    font-size: 20px;
-    margin-left: 20px;
-    color: white;
-    background-color: black;
-    margin-right: 500px;
-}
-
-.contenedor-grilla-especialidades {
-    display: flex;
-    justify-content: center;
-}
-
-.especialidades {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 500px);
-    background-color: white;
-    width: 1000px;
-    border: solid black 5px;
-    place-items: center;
-    margin-bottom: 40px;
-}
-
-.especialidades__img {
-    object-fit: cover;
-    margin: auto;
-    height: 100%;
-    width: 100%;
-}
-
-.titulos-img {
     position: relative;
     text-align: center;
-    margin-top: -60px;
-    font-weight: bold;
-    font-size: 40px;
-    color: white;
     background-color: black;
-}
-
-.textos-especialidades {
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item2 .galeria__img__mobile {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: solid white 10px;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item2 .p-galeria-mobile {
+    color: white;
+    font-size: 20px;
+    position: relative;
     text-align: center;
+    background-color: black;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item3 .galeria__img__mobile {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: solid white 10px;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item3 .p-galeria-mobile {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    background-color: black;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item4 .galeria__img__mobile {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: solid white 10px;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item4 .p-galeria-mobile {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    background-color: black;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item5 .galeria__img__mobile {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: solid white 10px;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item5 .p-galeria-mobile {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    background-color: black;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item6 .galeria__img__mobile {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: solid white 10px;
+  }
+  .main-equipamiento .galeria-mobile .galeria__item6 .p-galeria-mobile {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    background-color: black;
+  }
 }
-
-.titulo-imagen {
-    height: 100%;
-}
-
-.caja-boton-postularme {
+@media (max-width: 600px) {
+  .main-packs .section-packs .contenedor-total-packs .contenedor-h1-packs {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    text-align: center;
+  }
+  .main-packs .section-packs .contenedor-total-packs .contenedor-p1-packs {
+    display: inline;
+  }
+  .main-packs .section-packs .contenedor-total-packs .contenedor-p1-packs .p1-packs {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  .main-packs .section-packs .contenedor-total-packs .packs {
+    display: none;
+  }
+  .main-packs section .contenedor-h2-packs {
+    display: flex;
+    justify-content: center;
+  }
+  .main-packs section .contenedor-categorias {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  .packs-mobile {
+    margin-top: 30px;
+  }
 }
-
-.boton-postularme {
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
+@media (max-width: 600px) {
+  .main-postulate div .h1-postulate {
+    text-align: center;
+    padding-top: 50px;
+  }
+  .main-postulate div .p1-postulate {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .main-postulate .contenedor-grilla-especialidades {
+    display: none;
+  }
+  .main-postulate .contenedor-especialidades-mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .main-postulate .contenedor-especialidades-mobile div div .img-carusel-mobile {
+    filter: brightness(50%);
+    margin: auto;
+  }
+  .main-postulate .contenedor-especialidades-mobile div div div .h2-carusel-mobile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 0px black;
+    flex-wrap: wrap;
+    font-size: 25px;
+    background-color: black;
+  }
 }
-
-body {
-    background: url(../multimedia/fondo\ 2.png) no-repeat center center fixed;
-    background-size: cover;
+@media (max-width: 600px) {
+  footer .contenedor-logo-footer {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+  footer .contenedor-direccion {
+    display: none;
+  }
+  footer .form-suscripcion .suscribirse {
+    width: 60%;
+  }
+  footer .form-suscripcion .boton-suscribir {
+    height: 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

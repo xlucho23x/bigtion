@@ -144,16 +144,6 @@ h1 {
     margin-left: 20px;
 }
 
-.cajas-servicios {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.card-img-top {
-    width: 285px;
-    height: 160px;
-}
-
 .seccion-nuestros-clientes {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -214,6 +204,7 @@ iframe {
 .form-suscripcion {
     display: flex;
     justify-content: center;
+    margin-top: -50px;
 }
 
 .suscribirse {
@@ -227,10 +218,6 @@ iframe {
     height: 36px;
     width: 100px;
     border: solid;
-}
-
-.form-suscripcion {
-    margin-top: -50px;
 }
 
 .staff {
@@ -260,6 +247,8 @@ iframe {
     color: white;
     text-shadow: 1px 1px 1px black;
 }
+
+/* EQUIPAMIENTO */
 
 .h1-equipamiento {
     display: inline;
@@ -323,7 +312,9 @@ iframe {
     margin-bottom: 20px;
 }
 
-.h2-packs {
+/* PACKS */
+
+.h1-packs {
     font-family: 'Squada One', sans-serif;
     font-size: 80px;
     text-shadow: 1px 1px 1px black;
@@ -359,7 +350,9 @@ iframe {
     margin-bottom: 30px;
 }
 
-.h2-postulate {
+/* POSTULATE */
+
+.h1-postulate {
     font-family: 'Squada One', sans-serif;
     font-size: 80px;
     text-shadow: 1px 1px 1px black;
@@ -483,6 +476,8 @@ body {
         max-width: 100%;
     }
 
+    /* INDEX MOBILE*/
+
     .h1-index {
         margin-top: 15px;
     }
@@ -519,6 +514,8 @@ body {
         width: 150%;
     }
 
+    /*FOOTER MOBILE*/
+
     .contenedor-direccion {
         display: none;
     }
@@ -537,6 +534,8 @@ body {
         grid-template-rows: 1fr;
         justify-content: center;
     }
+
+        /* NOSOTROS */
 
     .contenedor-h2-nosotros {
         display: grid;
@@ -562,6 +561,8 @@ body {
         text-align: center;
         font-weight: bold;
     }
+
+    /* EQUIPAMIENETO */
 
     .logos-contacto {
         width: 100%;
@@ -623,6 +624,8 @@ body {
         border: solid white 10px;
     }
 
+    /*PACKS*/
+
     .contenedor-h1-packs {
         display: flex;
         justify-content: center;
@@ -664,7 +667,9 @@ body {
         margin: auto;
     }
 
-    .h2-postulate {
+    /*POSTULATE*/
+
+    .h1-postulate {
         text-align: center;
         padding-top: 50px;
     }

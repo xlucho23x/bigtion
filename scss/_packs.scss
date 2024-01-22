@@ -1,0 +1,55 @@
+.main-packs {
+    .section-packs {
+        .contenedor-total-packs {
+            .contenedor-h1-packs {
+                .h1-packs {
+                    font-family: 'Squada One', sans-serif;
+                    font-size: 80px;
+                    text-shadow: 1px 1px 1px black;
+                    color: white;
+                }
+            }
+
+            .contenedor-p1-packs {
+                .p1-packs {
+                    margin-left: 20px;
+                    margin-right: 470px;
+                    font-size: 20px;
+                    color: white;
+                    background-color: black;
+                }
+            }
+
+            .packs {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                width: 800px;
+                margin: auto;
+                margin-bottom: 30px;
+
+                .card {
+                    .card-img-top {
+                        height: 160px;
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        .contenedor-h2-packs {
+            .h2-categorias {
+                font-family: 'Squada One', sans-serif;
+                font-size: 80px;
+                text-shadow: 1px 1px 1px black;
+                color: white;
+            }
+        }
+
+        .contenedor-categorias {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+    }
+}

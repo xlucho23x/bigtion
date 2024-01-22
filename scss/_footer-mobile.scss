@@ -1,0 +1,24 @@
+@media (max-width: 600px) {
+    footer {
+        .contenedor-logo-footer {
+            width: 100%;
+            display: grid;
+            grid-template-rows: 1fr;
+            justify-content: center;
+        }
+
+        .contenedor-direccion {
+            display: none;
+        }
+
+        .form-suscripcion {
+            .suscribirse {
+                width: 60%;
+            }
+
+            .boton-suscribir {
+                height: 30px;
+            }
+        }
+    }
+}

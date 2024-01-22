@@ -1,0 +1,51 @@
+@media (max-width: 600px) {
+    .main-postulate {
+        div {
+            .h1-postulate {
+                text-align: center;
+                padding-top: 50px;
+            }
+        }
+
+        div {
+            .p1-postulate {
+                text-align: center;
+                width: 100%;
+                margin: auto;
+                margin-bottom: 50px;
+            }
+        }
+
+        .contenedor-grilla-especialidades {
+            display: none;
+        }
+
+        .contenedor-especialidades-mobile {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+
+            div {
+                div {
+                    .img-carusel-mobile {
+                        filter: brightness(50%);
+                        margin: auto;
+                    }
+
+                    div {
+                        .h2-carusel-mobile {
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            text-shadow: 2px 2px 0px black;
+                            flex-wrap: wrap;
+                            font-size: 25px;
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

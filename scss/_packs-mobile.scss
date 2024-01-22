@@ -1,0 +1,45 @@
+@media (max-width: 600px) {
+    .main-packs {
+        .section-packs {
+            .contenedor-total-packs {
+                .contenedor-h1-packs {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                .contenedor-p1-packs {
+                    display: inline;
+
+                    .p1-packs {
+                        text-align: center;
+                        width: 100%;
+                        margin: auto;
+                    }
+                }
+
+                .packs {
+                    display: none;
+                }
+            }
+        }
+
+        section {
+            .contenedor-h2-packs {
+                display: flex;
+                justify-content: center;
+            }
+
+            .contenedor-categorias {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: auto;
+            }
+        }
+    }
+
+    .packs-mobile {
+        margin-top: 30px;
+    }
+}

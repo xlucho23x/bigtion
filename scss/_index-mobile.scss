@@ -1,0 +1,49 @@
+@media (max-width: 600px) {
+    main {
+        .seccion1 {
+            div {
+                .h1-index {
+                    margin-top: 15px;
+                }
+            }
+
+            div {
+                .h3-index {
+                    display: none;
+                }
+            }
+
+        }
+
+        .servicios {
+            .h2-servicios {
+                display: flex;
+                justify-content: center;
+            }
+
+            .cartas-index-pc {
+                display: none;
+            }
+
+            .cartas-index-mobile {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .seccion-nuestros-clientes {
+            div {
+                .h2-nuestros-clientes {
+                    text-align: center;
+                }
+            }
+
+            div {
+                .carousel-inner {
+                    margin-left: -250px;
+                    width: 150%;
+                }
+            }
+        }
+    }
+}

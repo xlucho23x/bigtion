@@ -1,0 +1,84 @@
+main {
+    .seccion1 {
+        display: inline;
+        text-align: center;
+        z-index: 0;
+        color: white;
+
+        div {
+            .h1-index {
+                color: white;
+                background-color: black;
+                display: inline-block;
+            }
+        }
+
+        div {
+            .h2-index {
+                font-size: 28px;
+                font-style: oblique;
+                color: white;
+                background-color: black;
+                display: inline-block;
+            }
+        }
+
+        div {
+            .h3-index {
+                font-size: 28px;
+                font-style: oblique;
+                color: white;
+                background-color: black;
+                display: inline-block;
+            }
+        }
+
+        .div-boton {
+            padding-top: 50px;
+
+            .enlace-boton {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .servicios {
+        padding-top: 50px;
+
+        .h2-servicios {
+            color: white;
+            font-family: 'Squada One', sans-serif;
+            text-shadow: 1px 1px 1px black;
+
+            .p-servicios {
+                font-size: 80px;
+                text-shadow: 1px 1px 1px black;
+            }
+        }
+    }
+
+    .seccion-nuestros-clientes {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 100px;
+
+        div {
+            .h2-nuestros-clientes {
+                font-family: 'Squada One', sans-serif;
+                font-size: 80px;
+                text-shadow: 1px 1px 1px black;
+                color: white;
+            }
+        }
+
+        div {
+            .carousel-inner {
+                display: flex;
+                justify-content: center;
+                margin-left: -150px;
+            }
+        }
+    }
+}

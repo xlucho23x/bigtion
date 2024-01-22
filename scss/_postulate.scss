@@ -1,0 +1,77 @@
+.main-postulate {
+    div {
+        .h1-postulate {
+            font-family: 'Squada One', sans-serif;
+            font-size: 80px;
+            text-shadow: 1px 1px 1px black;
+            color: white;
+        }
+        .p1-postulate {
+            font-size: 20px;
+            margin-left: 20px;
+            color: white;
+            background-color: black;
+            margin-right: 500px;
+        }
+    }
+
+    .contenedor-grilla-especialidades {
+        display: flex;
+        justify-content: center;
+
+        .especialidades {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 500px);
+            background-color: white;
+            width: 1000px;
+            border: solid black 5px;
+            place-items: center;
+            margin-bottom: 40px;
+
+            .titulo-imagen {
+                height: 100%;
+
+                .especialidades__img {
+                    object-fit: cover;
+                    margin: auto;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .titulos-img {
+                position: relative;
+                text-align: center;
+                margin-top: -60px;
+                font-weight: bold;
+                font-size: 40px;
+                color: white;
+                background-color: black;
+            }
+        }
+
+        div {
+            .textos-especialidades {
+                font-size: 30px;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+
+    .caja-boton-postularme {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+
+        .boton-postularme {
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}
