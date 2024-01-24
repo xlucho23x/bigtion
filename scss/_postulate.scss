@@ -16,8 +16,7 @@
     }
 
     .contenedor-grilla-especialidades {
-        display: flex;
-        justify-content: center;
+        @include flexbox (flex, center);
 
         .especialidades {
             display: grid;
@@ -35,8 +34,7 @@
                 .especialidades__img {
                     object-fit: cover;
                     margin: auto;
-                    height: 100%;
-                    width: 100%;
+                    @include anchoalto (100%, 100%);
                 }
             }
 

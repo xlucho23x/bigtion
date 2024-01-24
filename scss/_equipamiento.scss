@@ -45,88 +45,33 @@
         }
 
         .galeria__item2 {
-            .galeria__img {
-                width: 100%;
-                height: 300px;
-                object-fit: cover;
-                border-radius: 2px;
-                border: solid white 10px;
-
-                &:hover {
-                    transform: scale(1.1);
-                    filter: brightness(50%);
-                }
-            }
-        }
-
-        .galeria__item3 {
-            .galeria__img {
-                width: 100%;
-                height: 300px;
-                object-fit: cover;
-                border-radius: 2px;
-                border: solid white 10px;
-
-                &:hover {
-                    transform: scale(1.1);
-                    filter: brightness(50%);
-                }
-            }
-        }
-
-        .galeria__item4 {
-            .galeria__img {
-                width: 100%;
-                height: 300px;
-                object-fit: cover;
-                border-radius: 2px;
-                border: solid white 10px;
-
-                &:hover {
-                    transform: scale(1.1);
-                    filter: brightness(50%);
-                }
-            }
-        }
-
-        .galeria__item5 {
-            .galeria__img {
-                width: 100%;
-                height: 300px;
-                object-fit: cover;
-                border-radius: 2px;
-                border: solid white 10px;
-
-                &:hover {
-                    transform: scale(1.1);
-                    filter: brightness(50%);
-                }
-            }
+            @extend .galeria__item1;
         }
     }
 
-    .galeria__item6 {
-        .galeria__img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 2px;
-            border: solid white 10px;
+    .galeria__item3 {
+        @extend .galeria__item1;
+    }
 
-            &:hover {
-                transform: scale(1.1);
-                filter: brightness(50%);
-            }
-        }
+    .galeria__item4 {
+        @extend .galeria__item1;
+    }
+
+    .galeria__item5 {
+        @extend .galeria__item1;
+    }
+
+
+    .galeria__item6 {
+        @extend .galeria__item1;
     }
 }
 
 .lista-equipamiento {
+    @include flexbox (flex, center);
     margin-left: 20px;
     margin-right: 90px;
     font-size: 20px;
     color: white;
-    display: flex;
-    justify-content: center;
     margin-bottom: 20px;
 }

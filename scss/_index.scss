@@ -7,39 +7,43 @@ main {
 
         div {
             .h1-index {
+                margin-top: 100px;
                 color: white;
                 background-color: black;
                 display: inline-block;
+                border-radius: 10px;
             }
         }
 
         div {
             .h2-index {
-                font-size: 28px;
-                font-style: oblique;
-                color: white;
-                background-color: black;
-                display: inline-block;
+                @include textosindex (28px, black);
             }
         }
 
         div {
             .h3-index {
-                font-size: 28px;
-                font-style: oblique;
-                color: white;
-                background-color: black;
-                display: inline-block;
+                @include textosindex (28px, black);
+            }
+        }
+
+        .contenedor-presentacion {
+            margin: auto;
+            padding-top: 80px;
+            padding-bottom: 50px;
+            width: 80%;
+
+            .texto-presentacion {
+                @include textosindex (22px, none);
+                text-shadow: 2px 1px 2px black;
+                text-align: center;
             }
         }
 
         .div-boton {
-            padding-top: 50px;
 
-            .enlace-boton {
-                text-decoration: none;
-                color: black;
-                font-weight: bold;
+            .boton-contacto {
+                @include estiloboton;
             }
         }
     }
@@ -75,8 +79,7 @@ main {
 
         div {
             .carousel-inner {
-                display: flex;
-                justify-content: center;
+                @include flexbox (flex, center);
                 margin-left: -150px;
             }
         }

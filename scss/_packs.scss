@@ -47,8 +47,7 @@
         }
 
         .contenedor-categorias {
-            display: flex;
-            justify-content: space-around;
+            @include flexbox (flex, space-around);
             margin-bottom: 30px;
         }
     }

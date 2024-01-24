@@ -1,9 +1,8 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: map-get($flexbox, displayflex);
+    justify-content: map-get($flexbox, horizontal);
+    align-items: map-get($flexbox, vertical);
     background-color: black;
-    margin-bottom: 50px;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -15,24 +14,30 @@ header {
 
     .menu-navegable ul {
         list-style-type: none;
-        display: flex;
+        display: map-get($menunav, display);
         text-transform: uppercase;
     }
 
     .menu-navegable li {
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 20px;
+        margin-left: map-get($menunav, tamano);
+        margin-right: map-get($menunav, tamano);
+        font-size: map-get($menunav, tamano);
     }
 
     .menu-navegable a {
-        text-decoration: none;
-        color: white;
+        text-decoration: map-get($menunav, decoration);
+        color: map-get($menunav, color);
         font-weight: bold;
 
         &hover {
-            text-decoration: none;
-            color: white;
+            text-decoration: map-get($menunav, decoration);
+            color: map-get($menunav, color);
         }
     }
+}
+
+.onda-header {
+    margin-top: -70px;
+    position: fixed;
+    z-index: 1;
 }

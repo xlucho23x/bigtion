@@ -9,6 +9,7 @@
     <title>Bigtion</title>
     <link rel="shortcut icon" href="./multimedia/Favicon.png">
     <link rel="stylesheet" href="./estilos/css bootstrap/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilos/styles.css">
 </head>
 
@@ -84,16 +85,19 @@
     <main>
         <section class="seccion1">
             <div>
-                <h1 class="h1-index">¡BIENVENIDO A BIGTION!</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250" class="h1-index">¡BIENVENIDO A BIGTION!</h1>
             </div>
             <div class="subtituloindex">
-                <h2 class="h2-index">Agencia de marketing digital</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500" class="h2-index">Agencia de marketing digital</h2>
             </div>
             <div>
-                <h2 class="h3-index">¡Preparate para potenciar tu marca!</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500" class="h3-index">¡Preparate para potenciar tu marca!</h2>
+            </div>
+            <div class="contenedor-presentacion">
+                <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" class="texto-presentacion">Entendemos que el mundo digital es un paisaje en constante evolución. Nos enorgullece ofrecer soluciones de marketing digital innovadoras y personalizadas para llevar tu negocio al siguiente nivel. Somos tu aliado estratégico en la era digital, ayudándote a destacar, atraer clientes y aumentar tus conversiones.</p>
             </div>
             <div class="d-flex justify-content-center pb-3 div-boton">
-                <button class="btn btn-light"><a class="enlace-boton" href="#footerindex">CONTACTANOS</a></button>
+                <button class="btn btn-light boton-contacto"><a class="enlace-boton" href="#footerindex">CONTACTANOS</a></button>
             </div>
         </section>
         <section class="servicios">
@@ -102,7 +106,7 @@
             </div>
             <div class="cartas-index-pc">
                 <div class="d-flex justify-content-evenly">
-                    <div class="card" style="width: 18rem;">
+                    <div data-aos="flip-left" data-aos-duration="800" data-aos-delay="500" class="card" style="width: 18rem;">
                         <img src="./multimedia/Blog images/carta mkt.jpg" class="card-img-top" alt="Marketing-Digital"
                             loading="lazy">
                         <div class="card-body">
@@ -114,7 +118,7 @@
                                 Ads. El objetivo es ayudarte a aumentar tu facturación de manera exponencial</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div data-aos="flip-left" data-aos-duration="800" data-aos-delay="750" class="card" style="width: 18rem;">
                         <img src="./multimedia/Blog images/carta contenido.jpg" class="card-img-top" loading="lazy"
                             alt="Creacion-Contenido">
                         <div class="card-body">
@@ -125,7 +129,7 @@
                                 el éxito de tu marca en las plataformas sociales más relevantes</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div data-aos="flip-left" data-aos-duration="800" data-aos-delay="1000" class="card" style="width: 18rem;">
                         <img src="./multimedia/Blog images/carta diseño.jpg" class="card-img-top" loading="lazy"
                             alt="Marketing-Digital">
                         <div class="card-body">
@@ -235,7 +239,10 @@
     </footer>
     <script src="./js/bootstrap.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

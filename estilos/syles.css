@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
-.enlace-boton {
-  text-decoration: none;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-  font-weight: bold;
-  font-size: 30px;
-}
-
 body {
   margin: 0;
   background: url(../multimedia/fondo\ 2.png) no-repeat center center fixed;
@@ -62,6 +54,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: black;
+  margin-bottom: 50px;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -90,12 +83,6 @@ header .menu-navegable ahover {
   color: white;
 }
 
-.onda-header {
-  margin-top: -70px;
-  position: fixed;
-  z-index: 1;
-}
-
 main .seccion1 {
   display: inline;
   text-align: center;
@@ -103,11 +90,9 @@ main .seccion1 {
   color: white;
 }
 main .seccion1 div .h1-index {
-  margin-top: 100px;
   color: white;
   background-color: black;
   display: inline-block;
-  border-radius: 10px;
 }
 main .seccion1 div .h2-index {
   font-size: 28px;
@@ -117,43 +102,26 @@ main .seccion1 div .h2-index {
   display: inline-block;
 }
 main .seccion1 div .h3-index {
-  font-size: 28px;
+  font-size: 30px;
   font-style: oblique;
   color: white;
   background-color: black;
   display: inline-block;
 }
-main .seccion1 .contenedor-presentacion {
-  margin: auto;
-  padding-top: 80px;
-  padding-bottom: 50px;
-  width: 80%;
-}
-main .seccion1 .contenedor-presentacion .texto-presentacion {
-  font-size: 22px;
+main .seccion1 .texto-presentacion {
+  font-size: 30px;
   font-style: oblique;
   color: white;
-  background-color: none;
+  background-color: black;
   display: inline-block;
-  text-shadow: 2px 1px 2px black;
-  text-align: center;
 }
-main .seccion1 .div-boton .boton-contacto {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
+main .seccion1 .div-boton {
+  padding-top: 50px;
+}
+main .seccion1 .div-boton .enlace-boton {
   text-decoration: none;
-  color: #fff;
-  background-color: #193d98;
-  box-shadow: 2px 2px 1px #000000;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
-}
-main .seccion1 .div-boton .boton-contacto:hover {
-  background-color: #10255c;
-  border-color: #2980b9;
-  box-shadow: 0px 0px 10px #9d9d9d;
+  color: black;
+  font-weight: bold;
 }
 main .servicios {
   padding-top: 50px;
@@ -673,4 +641,4 @@ footer .form-suscripcion .boton-suscribir {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=syles.css.map */

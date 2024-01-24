@@ -30,8 +30,7 @@
 }
 
 .seccion-mvv {
-    display: flex;
-    justify-content: space-around;
+    @include flexbox (flex, space-around);
     margin-top: 200px;
     margin-bottom: 200px;
     text-align: center;
