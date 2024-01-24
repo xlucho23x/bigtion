@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 514px) {
     .main-postulate {
         div {
             .h1-postulate {
@@ -8,11 +8,17 @@
         }
 
         div {
+            margin: auto;
+
             .p1-postulate {
-                text-align: center;
-                width: 100%;
+                font-size: 27px;
+                font-style: oblique;
+                color: white;
+                background-color: rgba(0, 0, 0, 0);
+                width: 90%;
                 margin: auto;
-                margin-bottom: 50px;
+                text-align: center;
+                margin-bottom: 30px;
             }
         }
 
@@ -23,7 +29,6 @@
         .contenedor-especialidades-mobile {
             display: flex;
             justify-content: center;
-            width: 100%;
             margin: auto;
 
             div {
@@ -31,6 +36,8 @@
                     .img-carusel-mobile {
                         filter: brightness(50%);
                         margin: auto;
+                        border: solid white 5px;
+                        border-radius: 5px;
                     }
 
                     div {

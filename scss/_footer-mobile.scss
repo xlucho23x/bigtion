@@ -1,5 +1,6 @@
-@media (max-width: 600px) {
+@media (max-width: 514px) {
     footer {
+        height: 350px;
         .contenedor-logo-footer {
             width: 100%;
             display: grid;
@@ -12,13 +13,7 @@
         }
 
         .form-suscripcion {
-            .suscribirse {
-                width: 60%;
-            }
-
-            .boton-suscribir {
-                height: 30px;
-            }
+            display: none;
         }
     }
 }

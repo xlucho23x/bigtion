@@ -1,23 +1,26 @@
-@media (max-width: 600px) {
-    .menu-navegable {
-        display: none;
-    }
+@media (max-width: 514px) {
+    header {
+        background: none;
+        margin: auto;
 
-    .logomarca {
-        display: none;
-    }
+        .logomarca {
+            display: none;
+        }
 
-    .nav-mobile {
-        background-color: black;
-        div {
-            .logomarcamobile {
-                display: inline-block;
-                width: 50px;
-                height: 50px;
+        .nav-mobile {
+            background-color: black;
+            margin: auto;
 
-                .logomarcamobile__img {
-                    display: block;
-                    max-width: 100%;
+            div {
+                .logomarcamobile {
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+
+                    .logomarcamobile__img {
+                        display: block;
+                        max-width: 100%;
+                    }
                 }
             }
         }

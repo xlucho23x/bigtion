@@ -1,60 +1,72 @@
 footer {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
+    height: 250px;
     align-items: center;
-    background-color: black;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 
     .contenedor-logo-footer {
+        @include anchoalto (150px, 150px);
+
         .logomarca {
-            width: 100px;
-            margin: 0;
+            @include anchoalto (150px, 150px);
+            align-items: end;
         }
     }
 
     .logos-contacto {
-        width: 400px;
-        height: 80px;
+        @include anchoalto (100%, 100%);
         display: flex;
         justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
 
         .iconos-redes {
-            font-size: 30px;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 60px;
+            color: white;
+        }
+
+        .form-suscripcion {
+            width: 100%;
+            @include flexbox (flex, center);
+        }
+
+        .suscribirse {
+            height: 50px;
+            width: 300px;
+            text-align: center;
+            border: solid;
+            border-radius: 25px;
+        }
+
+        .boton-contacto {
+            @include estiloboton;
+        }
+
+        .p-suscribite {
+            @include textosindex (20px, none);
+            font-weight: bold;
+            margin-top: 8px;
+            text-shadow: 1px 1px 2px black;
         }
     }
 
+
     .contenedor-direccion {
-        width: 200px;
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
         justify-content: end;
 
         iframe {
-            height: 100px;
-            width: 100px;
             display: flex;
+            margin-right: 20px;
             justify-content: end;
-        }
-    }
-
-    .form-suscripcion {
-        flex: 0 0 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: -50px;
-
-
-        .suscribirse {
-            height: 30px;
-            width: 400px;
-            text-align: center;
-            border: solid;
-        }
-
-        .boton-suscribir {
-            height: 36px;
-            width: 100px;
-            border: solid;
+            @include anchoalto (150px, 150px);
+            border-radius: 20px;
+            border: 10px solid black;
         }
     }
 }

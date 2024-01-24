@@ -1,6 +1,7 @@
 .main-postulate {
     div {
         .h1-postulate {
+            padding-top: 150px;
             font-family: 'Squada One', sans-serif;
             font-size: 80px;
             text-shadow: 1px 1px 1px black;
@@ -65,11 +66,7 @@
         padding-bottom: 50px;
 
         .boton-postularme {
-            width: 200px;
-            height: 40px;
-            font-size: 20px;
-            border-radius: 10px;
-            cursor: pointer;
+            @include estiloboton;
         }
     }
 }

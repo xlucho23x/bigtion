@@ -14,7 +14,7 @@ h1 {
     margin-top: 0;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 515px) {
     .nav-mobile {
         display: none;
     }
@@ -36,7 +36,7 @@ h1 {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 514px) {
     .menu-navegable {
         display: none;
     }

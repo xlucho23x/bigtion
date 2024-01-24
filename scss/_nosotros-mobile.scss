@@ -1,11 +1,11 @@
-@media (max-width: 600px) {
+@media (max-width: 514px) {
     main {
         .seccion-nosotros {
             .contenedor-h2-nosotros {
+                margin-top: -100px;
                 display: grid;
                 grid-template-rows: 1fr;
                 text-align: center;
-                margin-top: 150px;
             }
 
             .staff {

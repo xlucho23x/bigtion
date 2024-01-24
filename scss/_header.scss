@@ -1,15 +1,20 @@
 header {
     display: map-get($flexbox, displayflex);
     justify-content: map-get($flexbox, horizontal);
-    align-items: map-get($flexbox, vertical);
-    background-color: black;
-    position: sticky;
-    top: 0;
+    align-items: top;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
     z-index: 2;
 
-    .logomarca {
-        width: 100px;
-        margin: 0;
+    .contenedor-logomarca {
+        .logomarca {
+            width: 100px;
+            margin: 0;
+            margin-top: -22px;
+        }
     }
 
     .menu-navegable ul {

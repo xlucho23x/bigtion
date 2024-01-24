@@ -20,7 +20,7 @@ h1 {
   margin-top: 0;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 515px) {
   .nav-mobile {
     display: none;
   }
@@ -37,7 +37,7 @@ h1 {
     display: none;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 514px) {
   .menu-navegable {
     display: none;
   }
@@ -60,15 +60,18 @@ h1 {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  position: sticky;
-  top: 0;
+  align-items: top;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  position: fixed;
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
   z-index: 2;
 }
-header .logomarca {
+header .contenedor-logomarca .logomarca {
   width: 100px;
   margin: 0;
+  margin-top: -22px;
 }
 header .menu-navegable ul {
   list-style-type: none;
@@ -103,7 +106,7 @@ main .seccion1 {
   color: white;
 }
 main .seccion1 div .h1-index {
-  margin-top: 100px;
+  margin-top: 180px;
   color: white;
   background-color: black;
   display: inline-block;
@@ -184,6 +187,9 @@ main .seccion-nuestros-clientes div .carousel-inner {
   margin-left: -150px;
 }
 
+.seccion-nosotros .contenedor-h2-nosotros {
+  padding-top: 200px;
+}
 .seccion-nosotros .contenedor-h2-nosotros .h2-nosotros {
   display: inline;
   font-size: 80px;
@@ -210,6 +216,9 @@ main .seccion-nuestros-clientes div .carousel-inner {
   text-align: center;
 }
 
+.main-equipamiento .contenedor-h1-equipamiento {
+  padding-top: 150px;
+}
 .main-equipamiento .contenedor-h1-equipamiento .h1-equipamiento {
   display: inline;
   font-size: 80px;
@@ -255,6 +264,9 @@ main .seccion-nuestros-clientes div .carousel-inner {
   margin-bottom: 20px;
 }
 
+.main-packs .section-packs .contenedor-total-packs .contenedor-h1-packs {
+  padding-top: 150px;
+}
 .main-packs .section-packs .contenedor-total-packs .contenedor-h1-packs .h1-packs {
   font-family: "Squada One", sans-serif;
   font-size: 80px;
@@ -291,6 +303,7 @@ main .seccion-nuestros-clientes div .carousel-inner {
 }
 
 .main-postulate div .h1-postulate {
+  padding-top: 150px;
   font-family: "Squada One", sans-serif;
   font-size: 80px;
   text-shadow: 1px 1px 1px black;
@@ -347,89 +360,143 @@ main .seccion-nuestros-clientes div .carousel-inner {
   padding-bottom: 50px;
 }
 .main-postulate .caja-boton-postularme .boton-postularme {
-  width: 200px;
-  height: 40px;
-  font-size: 20px;
-  border-radius: 10px;
-  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #193d98;
+  box-shadow: 2px 2px 1px #000000;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+.main-postulate .caja-boton-postularme .boton-postularme:hover {
+  background-color: #10255c;
+  border-color: #2980b9;
+  box-shadow: 0px 0px 10px #9d9d9d;
 }
 
 footer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
+  height: 250px;
   align-items: center;
-  background-color: black;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+footer .contenedor-logo-footer {
+  width: 150px;
+  height: 150px;
 }
 footer .contenedor-logo-footer .logomarca {
-  width: 100px;
-  margin: 0;
+  width: 150px;
+  height: 150px;
+  align-items: end;
 }
 footer .logos-contacto {
-  width: 400px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
 }
 footer .logos-contacto .iconos-redes {
-  font-size: 30px;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
+  color: white;
+}
+footer .logos-contacto .form-suscripcion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer .logos-contacto .suscribirse {
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  border: solid;
+  border-radius: 25px;
+}
+footer .logos-contacto .boton-contacto {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #193d98;
+  box-shadow: 2px 2px 1px #000000;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+footer .logos-contacto .boton-contacto:hover {
+  background-color: #10255c;
+  border-color: #2980b9;
+  box-shadow: 0px 0px 10px #9d9d9d;
+}
+footer .logos-contacto .p-suscribite {
+  font-size: 20px;
+  font-style: oblique;
+  color: white;
+  background-color: none;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 8px;
+  text-shadow: 1px 1px 2px black;
 }
 footer .contenedor-direccion {
-  width: 200px;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: end;
 }
 footer .contenedor-direccion iframe {
-  height: 100px;
-  width: 100px;
   display: flex;
+  margin-right: 20px;
   justify-content: end;
-}
-footer .form-suscripcion {
-  flex: 0 0 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: -50px;
-}
-footer .form-suscripcion .suscribirse {
-  height: 30px;
-  width: 400px;
-  text-align: center;
-  border: solid;
-}
-footer .form-suscripcion .boton-suscribir {
-  height: 36px;
-  width: 100px;
-  border: solid;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  border: 10px solid black;
 }
 
-@media (max-width: 600px) {
-  .menu-navegable {
+@media (max-width: 514px) {
+  header {
+    background: none;
+    margin: auto;
+  }
+  header .logomarca {
     display: none;
   }
-  .logomarca {
-    display: none;
-  }
-  .nav-mobile {
+  header .nav-mobile {
     background-color: black;
+    margin: auto;
   }
-  .nav-mobile div .logomarcamobile {
+  header .nav-mobile div .logomarcamobile {
     display: inline-block;
     width: 50px;
     height: 50px;
   }
-  .nav-mobile div .logomarcamobile .logomarcamobile__img {
+  header .nav-mobile div .logomarcamobile .logomarcamobile__img {
     display: block;
     max-width: 100%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 514px) {
   main .seccion1 div .h1-index {
-    margin-top: 15px;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  main .seccion1 div .h2-index {
+    display: none;
   }
   main .seccion1 div .h3-index {
     display: none;
+  }
+  main .seccion1 .contenedor-presentacion .texto-presentacion {
+    font-size: 27px;
   }
   main .servicios .h2-servicios {
     display: flex;
@@ -450,12 +517,12 @@ footer .form-suscripcion .boton-suscribir {
     width: 150%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 514px) {
   main .seccion-nosotros .contenedor-h2-nosotros {
+    margin-top: -100px;
     display: grid;
     grid-template-rows: 1fr;
     text-align: center;
-    margin-top: 150px;
   }
   main .seccion-nosotros .staff {
     width: 80%;
@@ -473,24 +540,32 @@ footer .form-suscripcion .boton-suscribir {
     gap: 30px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 514px) {
   .main-equipamiento .contenedor-h1-equipamiento {
     display: flex;
     justify-content: center;
     text-align: center;
   }
   .main-equipamiento .contenedor-h1-equipamiento .h1-equipamiento {
-    font-size: 50px;
-    margin-top: 30px;
+    font-size: 70px;
     margin-bottom: 30px;
+    margin-top: -70px;
   }
   .main-equipamiento .contenedor-parrafo-eq {
-    margin: auto;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
   }
   .main-equipamiento .contenedor-parrafo-eq .parrafo-eq {
+    font-size: 27px;
+    font-style: oblique;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
     text-align: center;
+    text-shadow: 1px 1px 2px black;
     margin: auto;
+    width: 90%;
+    padding-bottom: 10px;
   }
   .main-equipamiento .lista-equipamiento {
     display: none;
@@ -590,19 +665,29 @@ footer .form-suscripcion .boton-suscribir {
     background-color: black;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 514px) {
   .main-packs .section-packs .contenedor-total-packs .contenedor-h1-packs {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-right: 16px;
+    margin-top: -70px;
   }
   .main-packs .section-packs .contenedor-total-packs .contenedor-p1-packs {
-    display: inline;
+    display: flex;
+    justify-content: center;
   }
   .main-packs .section-packs .contenedor-total-packs .contenedor-p1-packs .p1-packs {
+    font-size: 27px;
+    font-style: oblique;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
     text-align: center;
-    width: 100%;
+    text-shadow: 1px 1px 2px black;
     margin: auto;
+    width: 90%;
+    padding-bottom: 10px;
   }
   .main-packs .section-packs .contenedor-total-packs .packs {
     display: none;
@@ -621,16 +706,23 @@ footer .form-suscripcion .boton-suscribir {
     margin-top: 30px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 514px) {
   .main-postulate div .h1-postulate {
     text-align: center;
     padding-top: 50px;
   }
-  .main-postulate div .p1-postulate {
-    text-align: center;
-    width: 100%;
+  .main-postulate div {
     margin: auto;
-    margin-bottom: 50px;
+  }
+  .main-postulate div .p1-postulate {
+    font-size: 27px;
+    font-style: oblique;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
   }
   .main-postulate .contenedor-grilla-especialidades {
     display: none;
@@ -638,12 +730,13 @@ footer .form-suscripcion .boton-suscribir {
   .main-postulate .contenedor-especialidades-mobile {
     display: flex;
     justify-content: center;
-    width: 100%;
     margin: auto;
   }
   .main-postulate .contenedor-especialidades-mobile div div .img-carusel-mobile {
     filter: brightness(50%);
     margin: auto;
+    border: solid white 5px;
+    border-radius: 5px;
   }
   .main-postulate .contenedor-especialidades-mobile div div div .h2-carusel-mobile {
     display: flex;
@@ -655,7 +748,10 @@ footer .form-suscripcion .boton-suscribir {
     background-color: black;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 514px) {
+  footer {
+    height: 350px;
+  }
   footer .contenedor-logo-footer {
     width: 100%;
     display: grid;
@@ -665,11 +761,8 @@ footer .form-suscripcion .boton-suscribir {
   footer .contenedor-direccion {
     display: none;
   }
-  footer .form-suscripcion .suscribirse {
-    width: 60%;
-  }
-  footer .form-suscripcion .boton-suscribir {
-    height: 30px;
+  footer .form-suscripcion {
+    display: none;
   }
 }
 
